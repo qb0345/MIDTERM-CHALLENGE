@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm Challenge Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+  
+      <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="25" cy="25" r="20" fill="green" />
+        <text x="25" y="30" text-anchor="middle" font-size="16" fill="white" font-family="Arial">MC</text>
+      </svg>
+      
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#palestine">Palestine</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#footer">Bottom</a></li>
+      </ul>
+    </nav>
+    <!-- Hamburger Menu (for mobile) -->
+    <div class="hamburger">&#9776;</div>
+  </header>
+
+  <!-- Tablet Tab Bar -->
+  <div class="tabbar">
+    <a href="#intro">Intro</a>
+    <a href="#palestine">Palestine</a>
+    <a href="#contact">Contact</a>
+    <a href="#footer">Bottom</a>
+  </div>
+
+  <!-- Introduction Section -->
+  <section id="intro" class="intro">
+    <h1>Build Your Mindset</h1>
+    <p>This section inspires you to think critically and stay motivated.</p>
+  </section>
+
+  <!-- Palestine Card Section -->
+  <section id="palestine" class="palestine">
+    <h2>Palestine Governorates</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/Bethlehem.jpg" alt="Bethlehem">
+        <h3>Bethlehem</h3>
+        <p>While Bethel is renowned for its ancient biblical significance, the modern reality is a small Palestinian village surrounded by agricultural land. The archaeological tell (Tell Beitin) itself is largely unexcavated and undeveloped for tourism, standing in contrast to more managed historical sites in the region.</p>
+      </div>
+      <div class="card">
+        <img src="images/Hebron.jpg" alt="Hebron">
+        <h3>Hebron</h3>
+        <p>Hebron is one of the oldest continuously inhabited cities in the world and is a site of immense religious significance for Jews, Muslims, and Christians. It is home to the Tomb of the Patriarchs (known to Muslims as the Ibrahimi Mosque), believed to be the burial place of the patriarchs Abraham, Isaac, and Jacob, and their wives.
+</p>
+      </div>
+       <div class="card">
+        <img src="images/jenin.jpg" alt="Jenin">
+        <h3>Jenin</h3>
+        <p>Jenin is known for its fertile agricultural lands, particularly olive groves. The city has a reputation for political activism and has been a significant flashpoint during periods of conflict. It is home to the Jenin Refugee Camp, one of the most densely populated camps established after the 1948 Arab-Israeli war. The camp has been the site of several major Israeli military incursions.</p>
+      </div>
+      <div class="card">
+        <img src="images/Quds.jpg" alt="Quds">
+        <h3>Quds</h3>
+        <p>The Arabic name for Jerusalem. A city of immense religious significance for Muslims, Jews, and Christians. Its status is a central issue in the Israeli-Palestinian conflict, with East Jerusalem claimed as the capital of a future Palestinian state. Home to the Al-Aqsa Mosque (Haram al-Sharif), the Western Wall, and the Church of the Holy Sepulchre.</p>
+      </div>
+      <div class="card">
+        <img src="images/Qalqilya.jpg" alt="Qalqilya">
+        <h3>Qalqilya</h3>
+        <p>A Palestinian city in the northern West Bank. It is known for being almost completely surrounded by the Israeli West Bank barrier, which has significantly impacted its economy and access to surrounding areas. The city is also famous for its Qalqilya Zoo, the only zoo in the West Bank and a rare recreational facility for Palestinians.</p>
+      </div>
+       <div class="card">
+        <img src="images/Tubas.jpeg" alt="Tubas">
+        <h3>Tubas</h3>
+        <p>A Palestinian city in the northern West Bank, located in the fertile Jordan Valley. It serves as a major agricultural center for the region, known for producing olives, grains, and fruits. The city's economy is primarily based on farming and herding. It functions as an administrative and services hub for the surrounding villages.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Subject:</label>
+      <input type="text" name="subject" required>
+
+      <label>Phone:</label>
+      <input type="number" name="phone" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" pattern=".+@ftu\.ac\.th" required>
+
+      <label>Secret Word:</label>
+      <input type="password" name="secret" 
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&]).{8,}" required>
+
+      <label>Message:</label>
+      <textarea name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Midterm Challenge. All rights reserved.</p>
+  </footer>
+
+  <!-- Go to Top Button -->
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="top-btn">↑</button>
+
+</body>
+</html>

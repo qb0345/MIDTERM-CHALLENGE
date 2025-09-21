@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Tablet Tab Bar */
+.tabbar {
+  display: none;
+  justify-content: space-around;
+  background: #292929;
+  padding: 10px;
+}
+
+.tabbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sections */
+.intro {
+  height: 50vh; /* Half laptop screen */
+  background: rgb(168, 243, 168);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.palestine { /* Palestine Card Section */
+  padding: 40px;
+  background: #ffffff;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Contact */
+.contact {
+  padding: 40px;
+  background: #eaeaea;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin: 8px 0 4px;
+}
+
+.contact input, .contact textarea {
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button {
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+}
+
+/* Go to Top Button */
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 95, 16);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .navbar { display: none; }
+  .tabbar { display: flex; }
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+  .tabbar { display: none; }
+  .hamburger { display: block; position: absolute; right: 20px; top: 15px; }
+}
